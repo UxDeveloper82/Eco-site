@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Amazing Shoes</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    />
+    <link rel="stylesheet" href="styles/contact.css" />
+    <script src="https://use.fontawesome.com/5f0fc0cc0f.js"></script>
+  </head>
+  <body>
+    	<nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">Online-Store</a>
+                  </div>
+                  <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#brand">Brands</a></li>
+							<li><a href="">Men and Women</a></li>
+							<li><a href="">Kids</a></li>
+							<li><a href="payment.html">Payments</a></li>
+							<li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                  </div><!--/.nav-collapse -->
+                </div>
+              </nav>
+    <!--Contact-Area-->
+    <section id="contact" class="contact">
+	    <div class="container">
+	        <div class="row">
+	            <h2>Contact-Us</h2>
+				<hr>
+	        </div>
+	        <div class="row-form">
+			    <form id="message-form">
+			        <div class="form-group">
+			            <label form="name">Name</label>
+						<input id="name" type="text" placeholder="Name" class="form-control">
+	                </div> 
+	                <div class="form-group">
+					    <label>Email</label>
+	                    <input id="email" type="text" placeholder="Email" class="form-control">
+					</div>
+					<div class="form-group">
+					    <label>Message</label>
+						<textarea id="message" type="message" name="message" class="form-control" rows="5"></textarea>
+					</div>
+					<input type="submit" class="btn btn-primary" value="Send Message">
+				</form>
+				<table class="table mt-5">	
+				      <thead>
+					        <tr>
+							    <th>Name</th>
+							     <th>Email</th>
+								 <th>Message</th>
+								 <th></th>
+							</tr>
+					  </thead>
+				      <tbody id="message-list"></tbody>
+			   </table> 
+	        </div>
+	    </div>
+	</section>
+    
+<section id="social-contact" class="contact-area">
+	        <div class="container">
+	             <h2>We<i class="fa fa-heart"></i>New Friends!</h2>    
+	                 <ul class="list-inline list-social">
+	                    <li class="social-twitter">
+						    <a href="#"><i class="fa fa-twitter"></i></a>
+						</li>
+	                    <li class="social-facebook">
+						    <a href="#"><i class="fa fa-facebook"></i></a>
+						</li>
+	                    <li class="social-google-plus">
+						   <a href="#"><i class="fa fa-google-plus"></i></a>
+						</li>
+	                 </ul>
+            </div>
+	</section>
+	<footer>
+	       <div class="container">
+	            <p>Copyright &copy; UxDesign 2016.<br>
+				All Rights Reserved.</p>
+	            <ul class="list-inline">
+	                <li>
+					    <a href="#">Privacy</a>
+	                </li>
+	                <li>
+	                    <a href="#">Terms</a>
+	                </li>
+					<li>
+					    <a href="#">FAQ</a>
+	                </li>
+	            </ul>
+	       </div>
+	</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <script src="js/contact.js"></script>
+  </body>
+</html>

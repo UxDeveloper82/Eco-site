@@ -1,0 +1,118 @@
+
+/*-----------------
+  Contact-area
+-------------------*/
+#contact{
+    padding-top: 50px;
+}
+.contact{
+	background:blue;
+	color:#fff;
+    margin-bottom: 100px;
+}
+
+section.cta {
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url('../images/bg-cta.jpg');
+  padding: 250px 0;
+}
+section.cta .cta-content {
+  position: relative;
+  z-index: 1;
+}
+section.cta .cta-content h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: white;
+  max-width: 450px;
+  font-size: 50px;
+}
+@media (min-width: 768px) {
+  section.cta .cta-content h2 {
+    font-size: 80px;
+  }
+}
+section.cta .overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/*-------------
+Contact Area 
+--------------*/
+.contact-area{
+	text-align:center;
+}
+.contact-area h2{
+	margin-top:0;
+	margin-bottom:25px;
+}
+.contact-area h2 i{
+	color:#dd4b39;
+}
+.contact-area ul.list-social{
+	margin-bottom:0;
+}
+.contact-area ul.list-social li a{
+	display:block;
+	height:80px;
+	width:80px;
+	line-height:80px;
+	font-size:40px;
+	border-radius:100%;
+	color:white;
+}
+.contact-area ul.list-social li.social-twitter a{
+	background-color:#1da1f2;
+}
+.contact-area ul.list-social li.social-twitter a:hover{
+	background-color:#0d95e8;
+}
+.contact-area ul.list-social li.social-facebook a{
+	background-color:#3b5998;
+}
+.contact-area ul.list-social li.social-facebook a:hover{
+	background-color:#344e86;
+}
+.contact-area ul.list-social li.social-google-plus a{
+	background-color:#dd4b39;
+}
+.contact-area ul.list-social li.social-google-plus a:hover{
+	background-color:#d73925;
+}
+
+
+/*-------------
+Footer area
+---------------*/ 
+footer{
+	background-color:#e8491d;;
+	padding:25px 0;
+	text-align:center;
+	color:rgba(255,255,255,0.3);
+} 
+footer p{
+	font-size:12px;
+	margin:0;
+}
+footer ul{
+	margin-bottom:0;
+}
+footer ul li a{
+     color:rgba(255,255,255,0.3);
+	 font-size:12px;
+}
+footer ul li a:hover,
+footer ul li a:focus,
+footer ul li a:active,
+footer ul li a.active{
+	text-decoration:none;
+}

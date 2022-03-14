@@ -1,0 +1,267 @@
+/*----------------------
+CSS FOR SHOES TEMPLATE
+*GLOBAL STYLE
+*NAV AREA
+*FOOTER AREA   
+-----------------------*/
+
+/*------------------
+   GLOBAL AREA 
+-------------------*/
+html,body{
+	margin:0;
+	padding:0;
+	height:100%;
+	width:100%;	
+}
+h2{
+	font-family:'Playfair Display',serif;
+	font-size:200%;
+	font-weight:700;
+	text-align:center;
+	color:#2c2c2c;
+}
+p{
+	font-family:'Raleway',serif;
+	color:#2c2c2c;
+	text-align:center;
+	font-size:140%;
+	line-height:180%;
+	text-align:justify;
+	font-weight:300;
+}
+h1{
+	text-align:center;
+	font-size:300%;
+	padding:2%;
+}
+
+img{
+	text-align:center;
+	max-width:100%;
+	height:auto;
+	width:auto;
+}
+section{
+	padding:100px 0;
+}
+hr{
+	border-color:#2c2c2c;
+	border-width:13px;
+	max-width:50px;
+}
+.bg-primary{
+	background-color:#F05F40
+}
+
+/*-----------------
+   Intro Area
+------------------*/
+header{
+	position:relative;
+	height:100%;
+	width:100%;
+	min-height:auto;
+	background:url(../shoes-img/iner-logo.jpg)fixed;
+	background-position:center;
+	background-repeat:no-repeat;
+	top:0;
+	display:table;
+	margin:0 auto;
+}
+header img{
+	margin:0 auto;
+}
+
+header .inner{
+	position:relative;
+	text-align:center;
+	width:100%;
+	padding:100px 15px 100px;
+}
+header .inner .content h1{
+	font-weight:700;
+	font-size:40px;
+	height:150px;
+	color:#e8491d;
+}
+
+header .inner .content p{
+	font-weight:700;
+	font-size:20px;
+	text-align:center;
+	color:#e8491d;
+}
+#details{
+	border:1px solid black;
+	
+}
+.nav-container{
+	width:80%;
+	margin:0 auto;
+}
+.logo{
+	padding:5px;
+	color:#333;
+	font-size:28px;
+	float:left;
+}
+#menu-icon{
+	display:none;
+}
+/*-------------------
+     Nav area
+-------------------*/
+/*---------------
+Portfolio area 
+-----------------*/
+.left-col{
+	width:60%;
+	float:left;
+	margin:4% 0 4% 4%;
+}
+.sidebar{
+	float:left;
+	width:26%;
+	padding:4%;
+}
+.sidebar img{
+	padding:200px 0;
+}
+.fourSale{
+	background:#333;
+	border:1px solid #333;
+}
+
+/*-------------
+  Contact-Area
+--------------*/
+#contact-area{
+	padding:100px 0;
+	margin:0 auto;
+}
+#contact-area .col-lg-12{
+	margin:0 auto;
+}
+.col-lg-12 h2{
+	padding:20px 0;
+	text-align:center;
+}
+/*-----------------
+    footer area
+-----------------*/
+
+footer{
+	background-color:#e8491d;
+	width:100%;
+}
+
+footer p{
+	padding:15px;
+	text-align:center;
+}
+/*----------------
+   Mobile version
+-----------------*/
+
+@media screen and (max-width: 768px){
+	#menu-icon{
+		float:right;
+		display:block;
+	}
+	.intro img{
+		 margin:0 auto;
+		
+	}
+
+	.content h1{
+		font-size:180%;
+	}
+	.left-col{
+		width:96%;
+		padding:0 2%;
+	}
+	.sidebar{
+		text-align:center;
+		width:96%;
+		padding:0 2%;
+		margin:0 0 3% 0;
+	}
+	img{
+		width:100%;
+		padding:2%;
+	}
+}
+
+/*-------------
+Contact Area 
+--------------*/
+.contact-area{
+	text-align:center;
+}
+.contact-area h2{
+	margin-top:0;
+	margin-bottom:25px;
+}
+.contact-area h2 i{
+	color:#dd4b39;
+}
+.contact-area ul.list-social{
+	margin-bottom:0;
+}
+.contact-area ul.list-social li a{
+	display:block;
+	height:80px;
+	width:80px;
+	line-height:80px;
+	font-size:40px;
+	border-radius:100%;
+	color:white;
+}
+.contact-area ul.list-social li.social-twitter a{
+	background-color:#1da1f2;
+}
+.contact-area ul.list-social li.social-twitter a:hover{
+	background-color:#0d95e8;
+}
+.contact-area ul.list-social li.social-facebook a{
+	background-color:#3b5998;
+}
+.contact-area ul.list-social li.social-facebook a:hover{
+	background-color:#344e86;
+}
+.contact-area ul.list-social li.social-google-plus a{
+	background-color:#dd4b39;
+}
+.contact-area ul.list-social li.social-google-plus a:hover{
+	background-color:#d73925;
+}
+
+
+/*-------------
+Footer area
+---------------*/ 
+footer{
+	background-color:#e8491d;;
+	padding:25px 0;
+	text-align:center;
+	color:rgba(255,255,255,0.3);
+} 
+footer p{
+	font-size:12px;
+	margin:0;
+}
+footer ul{
+	margin-bottom:0;
+}
+footer ul li a{
+     color:rgba(255,255,255,0.3);
+	 font-size:12px;
+}
+footer ul li a:hover,
+footer ul li a:focus,
+footer ul li a:active,
+footer ul li a.active{
+	text-decoration:none;
+}
+
