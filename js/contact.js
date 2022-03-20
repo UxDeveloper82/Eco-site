@@ -9,19 +9,7 @@ class Message {
 class UI {
     //DISPLAY OBJECTS IN TO SCREENS
     static displayMessages () {
-        const StoredMessages = [
-            {
-                name:'Martin',
-                email: 'myemail@aol.com',
-                message: 'Hello my people'
-            },
-                {
-                name:'Marcelo',
-                email: 'myemail@aol.com',
-                message: 'Hello my people Welcome'
-            }
-        ];
-        const messages = StoredMessages;
+        const messages = Store.getMessages();
         messages.forEach((message) => UI.addMessageToList(message));				
     }
      
@@ -118,6 +106,8 @@ document.querySelector("#message-form").addEventListener('submit', (e) => {
         // ADD MESSAGE TO UI
     UI.addMessageToList(mymessage);
 
+    Store.addMessage(message);
+
     UI.showAlert('Message Added', 'Success');
         //CLEAR FIELDS
     UI.clearFields();
@@ -126,7 +116,59 @@ document.querySelector("#message-form").addEventListener('submit', (e) => {
 
 //EVENT: REMOVE A BOOK
 document.querySelector("#message-list").addEventListener("click", (e) => {
+    //Remove from the UI
     UI.deleteMessage(e.target)
+
+    //Remove message from store
+    Store.removeMessage
+    (e.target.parentElement.previousElementSibling.textContent);
+    
+    //Show success message
     UI.showAlert('Message Deleted', 'Success');
 })
 	
+
+const Person = function(firstName, birthYear) {
+    this.firstName = firstName;
+    this.birthYear = birthYear;
+
+    //never to this
+    // this.calcAge = function() {
+    //     console.log(2037 - this.birthYear);
+    // }
+}
+
+const Jonas = new Person('Jonas', 1991);
+console.log(Jonas);
+
+//1. New {} is created
+//2. function is called, this = {}
+//3. {} linked to prototype
+//4. function automatically return {} 
+
+const matilda = new Person('Matilda', 2017);
+const jack = new Person('Jack', 1975);
+console.log(matilda, jack);
+
+console.log(Jonas instanceof Person);
+
+console.log(Person.prototype);
+
+Person.prototype.calcAge = function () {
+    console.log(2037 - this.birthYear);
+}
+
+Jonas.calcAge();
+matilda.calcAge();
+jack.calcAge();
+
+console.log(Jonas.__proto__ === Person.prototype);
+
+
+
+
+
+
+
+
+
